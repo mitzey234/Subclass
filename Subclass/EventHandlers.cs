@@ -60,7 +60,7 @@ namespace Subclass
 							}
 
 							// Equipment
-							selected.Inventory.items.Clear();
+							selected.Inventory.UserInventory.Items.Clear();
 							foreach (string e in subclass.Equipment)
 							{
 								selected.AddItem((ItemType)Enum.Parse(typeof(ItemType), e));
